@@ -1,5 +1,12 @@
 {% extends "main/base.html" %}
 
 {% block content %}
-
+<div>
+  {% for diary in diary_list %}
+  <img src="{{ diary.drawing.url }}">
+  <h2>{{ diary.title }}</h2>
+  <h3>{{ diary.date }}</h3>
+  <p>{{ diary.content }}</p>
+  {% endfor %}
+</div>
 {% endblock %}
