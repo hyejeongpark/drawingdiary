@@ -3,7 +3,8 @@
 ## Requirements
 
 - Python 3.4.2
-- django 1.9.5
+- Django 1.9.6
+- Pillow 3.2.0
 
 ## Dev config
 
