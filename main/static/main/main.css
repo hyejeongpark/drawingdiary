@@ -1,3 +1,56 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
 body {
-  background-color: #eee;
+  background: #f7cac9; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #f7cac9 , #8EA6CF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #f7cac9, #8EA6CF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #f7cac9, #8EA6CF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #f7cac9 , #8EA6CF); /* Standard syntax */
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
+}
+
+.title-name {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  margin: 40px;
+  font-weight: 300;
+}
+
+.article-width {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+article {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid white;
+  margin-bottom: 100px;
+}
+
+img {
+  width: 100%;
+}
+
+.diary {
+  padding: 25px;
+  color: #594C5D;
+}
+
+.date p {
+  color: #9D66CA;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title h2 {
+  color: #9D66CA;
+  margin: -3px 0 15px -2px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 544px) {
+  article {
+    border: 20px solid #DED8E2;
+  }
 }

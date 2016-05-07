@@ -1,12 +1,24 @@
 {% extends "main/base.html" %}
 
 {% block content %}
-<div>
+<section class="article-width">
   {% for diary in diary_list %}
-  <img src="{{ diary.drawing.url }}">
-  <h2>{{ diary.title }}</h2>
-  <h3>{{ diary.date }}</h3>
-  <p>{{ diary.content }}</p>
+  <article>
+    <section class="drawing">
+      <img src="{{ diary.drawing.url }}">
+    </section>
+    <section class="diary">
+      <div class="date">
+        <p>{{ diary.date }}</p>
+      </div>
+      <div class="title">
+        <h2>{{ diary.title }}</h2>
+      </div>
+      <div class="content">
+        <p>{{ diary.content }}</p>
+      </div>
+    </section>
+  </article>
   {% endfor %}
-</div>
+</section>
 {% endblock %}
