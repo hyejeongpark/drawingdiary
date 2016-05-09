@@ -24,16 +24,17 @@ body {
 
 article {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 2px solid #DED8E2;
   margin-bottom: 100px;
+  border-radius: 5px;
 }
 
 img {
   width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
 .diary {
-  padding: 25px;
+  padding: 30px 40px;
   color: #594C5D;
 }
 
@@ -74,10 +75,4 @@ img {
 
 .step-links a:hover {
   text-decoration: none;
-}
-
-@media screen and (min-width: 544px) {
-  article {
-    border: 20px solid #DED8E2;
-  }
 }
